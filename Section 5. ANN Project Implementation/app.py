@@ -6,16 +6,16 @@ import pandas as pd
 import pickle
 
 # Load Model
-model= tf.keras.models.load_model(r'D:\Datascience_projects\Github\GenAI\Generative-AI-with-LangChain-and-Hugging-Face\5. ANN Project Implementation\model.h5' )
+model= tf.keras.models.load_model('D:\Datascience_projects\Github\GenAI\Generative-AI-with-LangChain-and-Hugging-Face\Section 5. ANN Project Implementation\model.h5' )
 
 # Load Encoders and Scaler
-with open (r'D:\Datascience_projects\Github\GenAI\Generative-AI-with-LangChain-and-Hugging-Face\5. ANN Project Implementation\le_gender.pkl','rb') as file:
+with open ('D:\Datascience_projects\Github\GenAI\Generative-AI-with-LangChain-and-Hugging-Face\Section 5. ANN Project Implementation\le_gender.pkl','rb') as file:
     le_gender= pickle.load(file)
 
-with open(r'D:\Datascience_projects\Github\GenAI\Generative-AI-with-LangChain-and-Hugging-Face\5. ANN Project Implementation\ohe_geo.pkl', 'rb') as file:
+with open('D:\Datascience_projects\Github\GenAI\Generative-AI-with-LangChain-and-Hugging-Face\Section 5. ANN Project Implementation\ohe_geo.pkl', 'rb') as file:
     ohe_geo= pickle.load(file)
 
-with open(r'D:\Datascience_projects\Github\GenAI\Generative-AI-with-LangChain-and-Hugging-Face\5. ANN Project Implementation\std_scaler.pkl', 'rb') as file:
+with open('D:\Datascience_projects\Github\GenAI\Generative-AI-with-LangChain-and-Hugging-Face\Section 5. ANN Project Implementation\std_scaler.pkl', 'rb') as file:
     std_scaler= pickle.load(file)
 
 ## Streamlit app
