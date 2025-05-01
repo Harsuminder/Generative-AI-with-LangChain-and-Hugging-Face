@@ -5,3 +5,4 @@ scikit-learn>=0.24.0
 tensorboard>=2.10.0
 matplotlib>=3.2.0
 streamlit>=1.10.0
+keras
