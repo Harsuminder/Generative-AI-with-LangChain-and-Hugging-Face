@@ -1,8 +1,0 @@
-ipykernel
-numpy
-pandas
-matplotlib
-streamlit
-scikit-learn
-tensorflow==2.15.0
-tensorboard
