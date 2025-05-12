@@ -14,7 +14,9 @@ reverse_word_index= { value: key for key,value in word_index.items()}
 
 ## Load pre-trained model with ReLU activation
 
-model= load_model('simple_rnn.h5')
+import os
+model_path = r'D:\Datascience_projects\Github\GenAI\Generative-AI-with-LangChain-and-Hugging-Face\Section_6_Deep_Learning_Project_with_simpleRnn\simple_rnn.h5'
+model = load_model(model_path)
 
 
 # Step 2: Helper FInction
